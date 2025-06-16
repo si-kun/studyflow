@@ -1,3 +1,4 @@
+import AuthGurad from "@/components/auth/AuthGurad";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -49,6 +50,7 @@ const DAMMY_CONTENT =
 
 export default function Home() {
   return (
+    <AuthGurad>
     <div className="min-h-screen bg-gray-50">
       {/* ヘッダー部分 */}
       <Card className="rounded-t-none bg-indigo-400 p-5 shadow-none rounded-b-3xl">
@@ -191,5 +193,6 @@ export default function Home() {
         </nav>
       </footer>
     </div>
+    </AuthGurad>
   );
 }
